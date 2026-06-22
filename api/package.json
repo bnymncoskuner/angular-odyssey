@@ -1,0 +1,12 @@
+{
+  "name": "angular-evolution-api",
+  "version": "1.0.0",
+  "description": "Mock Google Books API server for Angular Evolution Demo",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.0"
+  }
+}

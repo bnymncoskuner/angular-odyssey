@@ -1,0 +1,1509 @@
+{
+  "kind": "books#volumes",
+  "totalItems": 100,
+  "items": [
+    {
+      "id": "lotr001",
+      "volumeInfo": {
+        "title": "The Lord of the Rings",
+        "authors": ["J.R.R. Tolkien"],
+        "description": "One Ring to rule them all, One Ring to find them, One Ring to bring them all and in the darkness bind them. In ancient times the Rings of Power were crafted by the Elven-smiths, and Sauron, the Dark Lord, forged the One Ring, filling it with his own power so that he could rule all others.",
+        "publisher": "Houghton Mifflin",
+        "publishedDate": "1954-07-29",
+        "pageCount": 1178,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/8406786-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=lotr001"
+      }
+    },
+    {
+      "id": "hobbit002",
+      "volumeInfo": {
+        "title": "The Hobbit",
+        "authors": ["J.R.R. Tolkien"],
+        "description": "Bilbo Baggins is a hobbit who enjoys a comfortable, unambitious life, rarely traveling any farther than his pantry or cellar. But his contentment is disturbed when the wizard Gandalf and a company of dwarves arrive on his doorstep one day to whisk him away on an adventure.",
+        "publisher": "George Allen & Unwin",
+        "publishedDate": "1937-09-21",
+        "pageCount": 310,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/6979861-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=hobbit002"
+      }
+    },
+    {
+      "id": "clean003",
+      "volumeInfo": {
+        "title": "Clean Code: A Handbook of Agile Software Craftsmanship",
+        "authors": ["Robert C. Martin"],
+        "description": "Even bad code can function. But if code isn't clean, it can bring a development organization to its knees. Every year, countless hours and significant resources are lost because of poorly written code. But it doesn't have to be that way.",
+        "publisher": "Prentice Hall",
+        "publishedDate": "2008-08-01",
+        "pageCount": 464,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/7222246-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=clean003"
+      }
+    },
+    {
+      "id": "design004",
+      "volumeInfo": {
+        "title": "Design Patterns: Elements of Reusable Object-Oriented Software",
+        "authors": ["Erich Gamma", "Richard Helm", "Ralph Johnson", "John Vlissides"],
+        "description": "Capturing a wealth of experience about the design of object-oriented software, four top-notch designers present a catalog of simple and succinct solutions to commonly occurring design problems.",
+        "publisher": "Addison-Wesley",
+        "publishedDate": "1994-10-31",
+        "pageCount": 395,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/1536155-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=design004"
+      }
+    },
+    {
+      "id": "brief005",
+      "volumeInfo": {
+        "title": "A Brief History of Time",
+        "authors": ["Stephen Hawking"],
+        "description": "A landmark volume in science writing by one of the great minds of our time, Stephen Hawking's book explores such profound questions as: How did the universe begin—and what made its start possible?",
+        "publisher": "Bantam Books",
+        "publishedDate": "1988-04-01",
+        "pageCount": 256,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/8479576-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=brief005"
+      }
+    },
+    {
+      "id": "nineteen006",
+      "volumeInfo": {
+        "title": "1984",
+        "authors": ["George Orwell"],
+        "description": "Among the seminal texts of the 20th century, Nineteen Eighty-Four is a rare work that grows more haunting as its dystopian proscriptions have become combated combated combated combated combated reality.",
+        "publisher": "Secker & Warburg",
+        "publishedDate": "1949-06-08",
+        "pageCount": 328,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/7222261-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=nineteen006"
+      }
+    },
+    {
+      "id": "brave007",
+      "volumeInfo": {
+        "title": "Brave New World",
+        "authors": ["Aldous Huxley"],
+        "description": "Aldous Huxley's profoundly important classic of world literature, Brave New World is a searching vision of an unequal, technologically-advanced future where humans are genetically bred, socially indoctrinated, and pharmaceutically anesthetized.",
+        "publisher": "Chatto & Windus",
+        "publishedDate": "1932-01-01",
+        "pageCount": 311,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/6544823-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=brave007"
+      }
+    },
+    {
+      "id": "gatsby008",
+      "volumeInfo": {
+        "title": "The Great Gatsby",
+        "authors": ["F. Scott Fitzgerald"],
+        "description": "The story of the fabulously wealthy Jay Gatsby and his love for the beautiful Daisy Buchanan, of lavish parties on Long Island at a time when The New York Times noted 'ichest was in the air.'",
+        "publisher": "Charles Scribner's Sons",
+        "publishedDate": "1925-04-10",
+        "pageCount": 180,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/7222160-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=gatsby008"
+      }
+    },
+    {
+      "id": "mockingbird009",
+      "volumeInfo": {
+        "title": "To Kill a Mockingbird",
+        "authors": ["Harper Lee"],
+        "description": "The unforgettable novel of a childhood in a sleepy Southern town and the crisis of conscience that rocked it. 'To Kill A Mockingbird' became both an instant bestseller and a critical success when it was first published in 1960.",
+        "publisher": "J. B. Lippincott & Co.",
+        "publishedDate": "1960-07-11",
+        "pageCount": 281,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/8228691-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=mockingbird009"
+      }
+    },
+    {
+      "id": "harry010",
+      "volumeInfo": {
+        "title": "Harry Potter and the Philosopher's Stone",
+        "authors": ["J.K. Rowling"],
+        "description": "Harry Potter has never even heard of Hogwarts when the letters start dropping on the doormat at number four, Privet Drive. Addressed in green ink on yellowish parchment with a purple seal, they are swiftly confiscated by his grisly aunt and uncle.",
+        "publisher": "Bloomsbury Publishing",
+        "publishedDate": "1997-06-26",
+        "pageCount": 223,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/10110415-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=harry010"
+      }
+    },
+    {
+      "id": "dune011",
+      "volumeInfo": {
+        "title": "Dune",
+        "authors": ["Frank Herbert"],
+        "description": "Set on the desert planet Arrakis, Dune is the story of the boy Paul Atreides, heir to a noble family tasked with ruling an inhospitable world where the only thing of value is the 'spice' melange, a drug capable of extending life and expanding consciousness.",
+        "publisher": "Chilton Books",
+        "publishedDate": "1965-08-01",
+        "pageCount": 412,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/7222231-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=dune011"
+      }
+    },
+    {
+      "id": "pragmatic012",
+      "volumeInfo": {
+        "title": "The Pragmatic Programmer: Your Journey to Mastery",
+        "authors": ["David Thomas", "Andrew Hunt"],
+        "description": "The Pragmatic Programmer is one of those rare tech books you'll read, re-read, and read again over the years. Whether you're new to the field or an experienced practitioner, you'll come away with fresh insights each time.",
+        "publisher": "Addison-Wesley",
+        "publishedDate": "2019-09-23",
+        "pageCount": 352,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/10063680-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=pragmatic012"
+      }
+    },
+    {
+      "id": "refactoring013",
+      "volumeInfo": {
+        "title": "Refactoring: Improving the Design of Existing Code",
+        "authors": ["Martin Fowler"],
+        "description": "For more than twenty years, experienced programmers worldwide have relied on Martin Fowler's Refactoring to improve the design of existing code and to enhance software maintainability.",
+        "publisher": "Addison-Wesley",
+        "publishedDate": "2018-11-20",
+        "pageCount": 448,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/8479577-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=refactoring013"
+      }
+    },
+    {
+      "id": "angular014",
+      "volumeInfo": {
+        "title": "Angular Development with TypeScript",
+        "authors": ["Yakov Fain", "Anton Moiseev"],
+        "description": "Angular Development with TypeScript teaches you how to build web applications with Angular and TypeScript. Written in an accessible, lively style, this book covers all the fundamentals of Angular development.",
+        "publisher": "Manning Publications",
+        "publishedDate": "2018-12-05",
+        "pageCount": 560,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/8479210-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=angular014"
+      }
+    },
+    {
+      "id": "sapiens015",
+      "volumeInfo": {
+        "title": "Sapiens: A Brief History of Humankind",
+        "authors": ["Yuval Noah Harari"],
+        "description": "From a renowned historian comes a groundbreaking narrative of humanity's creation and evolution that explores the ways in which biology and history have defined us and enhanced our understanding of what it means to be human.",
+        "publisher": "Harper",
+        "publishedDate": "2015-02-10",
+        "pageCount": 464,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/8406051-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=sapiens015"
+      }
+    },
+    {
+      "id": "thinking016",
+      "volumeInfo": {
+        "title": "Thinking, Fast and Slow",
+        "authors": ["Daniel Kahneman"],
+        "description": "In this international bestseller, Daniel Kahneman, the renowned psychologist and winner of the Nobel Prize in Economics, takes us on a groundbreaking tour of the mind and explains the two systems that drive the way we think.",
+        "publisher": "Farrar, Straus and Giroux",
+        "publishedDate": "2011-10-25",
+        "pageCount": 499,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/7327624-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=thinking016"
+      }
+    },
+    {
+      "id": "typescript017",
+      "volumeInfo": {
+        "title": "Programming TypeScript: Making Your JavaScript Applications Scale",
+        "authors": ["Boris Cherny"],
+        "description": "Any programmer working with a dynamically typed language will tell you how hard it is to scale to more lines of code and more engineers. That's why Facebook, Google, and Microsoft invented gradual static type layers for their dynamically typed JavaScript and Python code.",
+        "publisher": "O'Reilly Media",
+        "publishedDate": "2019-05-10",
+        "pageCount": 324,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/10063681-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=typescript017"
+      }
+    },
+    {
+      "id": "hitchhiker018",
+      "volumeInfo": {
+        "title": "The Hitchhiker's Guide to the Galaxy",
+        "authors": ["Douglas Adams"],
+        "description": "Seconds before the Earth is demolished to make way for a galactic freeway, Arthur Dent is plucked off the planet by his friend Ford Prefect, a researcher for the revised edition of The Hitchhiker's Guide to the Galaxy.",
+        "publisher": "Pan Books",
+        "publishedDate": "1979-10-12",
+        "pageCount": 224,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/8479578-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=hitchhiker018"
+      }
+    },
+    {
+      "id": "algorithms019",
+      "volumeInfo": {
+        "title": "Introduction to Algorithms",
+        "authors": ["Thomas H. Cormen", "Charles E. Leiserson", "Ronald L. Rivest", "Clifford Stein"],
+        "description": "Some books on algorithms are rigorous but incomplete; others cover masses of material but lack rigor. Introduction to Algorithms uniquely combines rigor and comprehensiveness in its coverage of algorithms.",
+        "publisher": "MIT Press",
+        "publishedDate": "2009-07-31",
+        "pageCount": 1312,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/6624025-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=algorithms019"
+      }
+    },
+    {
+      "id": "catcher020",
+      "volumeInfo": {
+        "title": "The Catcher in the Rye",
+        "authors": ["J.D. Salinger"],
+        "description": "The hero-narrator of The Catcher in the Rye is an ancient child of sixteen, a native New Yorker named Holden Caulfield. Through circumstances that tend to preclude adult, rational and logical behavior, Holden is expelled from prep school.",
+        "publisher": "Little, Brown and Company",
+        "publishedDate": "1951-07-16",
+        "pageCount": 277,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/8231856-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=catcher020"
+      }
+    },
+    {
+      "id": "rxjs021",
+      "volumeInfo": {
+        "title": "RxJS in Action",
+        "authors": ["Paul P. Daniels", "Luis Atencio"],
+        "description": "RxJS in Action gives you the development skills you need to create reactive applications with RxJS. This book is full of theory and practical examples that build on each other and help you begin thinking in a reactive manner.",
+        "publisher": "Manning Publications",
+        "publishedDate": "2017-07-18",
+        "pageCount": 352,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/8479579-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=rxjs021"
+      }
+    },
+    {
+      "id": "cosmos022",
+      "volumeInfo": {
+        "title": "Cosmos",
+        "authors": ["Carl Sagan"],
+        "description": "Cosmos has 13 heavily illustrated chapters, corresponding to the 13 episodes of the Cosmos television series. In the book, Sagan explores 15 billion years of cosmic evolution and the development of science and civilization.",
+        "publisher": "Random House",
+        "publishedDate": "1980-10-12",
+        "pageCount": 365,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/8479580-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=cosmos022"
+      }
+    },
+    {
+      "id": "pride023",
+      "volumeInfo": {
+        "title": "Pride and Prejudice",
+        "authors": ["Jane Austen"],
+        "description": "Since its immediate success in 1813, Pride and Prejudice has remained one of the most popular novels in the English language. Jane Austen called this brilliant work her own darling child.",
+        "publisher": "T. Egerton",
+        "publishedDate": "1813-01-28",
+        "pageCount": 432,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/8231857-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=pride023"
+      }
+    },
+    {
+      "id": "node024",
+      "volumeInfo": {
+        "title": "Node.js Design Patterns",
+        "authors": ["Mario Casciaro", "Luciano Mammino"],
+        "description": "Learn proven patterns, techniques, and tricks to take full advantage of the Node.js platform. Master well-known design principles to create applications that are readable, extensible, and that can grow big.",
+        "publisher": "Packt Publishing",
+        "publishedDate": "2020-07-29",
+        "pageCount": 660,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/10063682-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=node024"
+      }
+    },
+    {
+      "id": "ender025",
+      "volumeInfo": {
+        "title": "Ender's Game",
+        "authors": ["Orson Scott Card"],
+        "description": "Andrew 'Ender' Wiggin thinks he is playing computer simulated war games; he is, in fact, engaged in something far more desperate. The result of genetic experimentation, Ender may be the military genius Earth desperately needs in a war against an alien species.",
+        "publisher": "Tor Books",
+        "publishedDate": "1985-01-15",
+        "pageCount": 324,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/8479581-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=ender025"
+      }
+    },
+    {
+      "id": "atomic026",
+      "volumeInfo": {
+        "title": "Atomic Habits",
+        "authors": ["James Clear"],
+        "description": "No matter your goals, Atomic Habits offers a proven framework for improving every day. James Clear, one of the world's leading experts on habit formation, reveals practical strategies that will teach you exactly how to form good habits.",
+        "publisher": "Avery",
+        "publishedDate": "2018-10-16",
+        "pageCount": 320,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/10063683-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=atomic026"
+      }
+    },
+    {
+      "id": "cracking027",
+      "volumeInfo": {
+        "title": "Cracking the Coding Interview",
+        "authors": ["Gayle Laakmann McDowell"],
+        "description": "I am not a recruiter. I am a software engineer. And as such, I know what it's like to be asked to whip up brilliant algorithms on the spot and then write flawless code on a whiteboard. I've been through this as a candidate and as an interviewer.",
+        "publisher": "CareerCup",
+        "publishedDate": "2015-07-01",
+        "pageCount": 687,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/8479582-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=cracking027"
+      }
+    },
+    {
+      "id": "foundation028",
+      "volumeInfo": {
+        "title": "Foundation",
+        "authors": ["Isaac Asimov"],
+        "description": "For twelve thousand years the Galactic Empire has ruled supreme. Now it is dying. Only Hari Seldon, creator of the revolutionary science of psychohistory, can see into the future—a dark age of ignorance, barbarism, and warfare.",
+        "publisher": "Gnome Press",
+        "publishedDate": "1951-06-01",
+        "pageCount": 244,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/6544824-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=foundation028"
+      }
+    },
+    {
+      "id": "javascript029",
+      "volumeInfo": {
+        "title": "You Don't Know JS: Scope & Closures",
+        "authors": ["Kyle Simpson"],
+        "description": "No matter how much experience you have with JavaScript, odds are you don't fully understand the language. This concise yet in-depth guide takes you inside scope and closures, two core concepts you need to know to become a more efficient JavaScript programmer.",
+        "publisher": "O'Reilly Media",
+        "publishedDate": "2014-03-24",
+        "pageCount": 98,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/7222247-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=javascript029"
+      }
+    },
+    {
+      "id": "neuromancer030",
+      "volumeInfo": {
+        "title": "Neuromancer",
+        "authors": ["William Gibson"],
+        "description": "The Matrix is a world within the world, a global consensus hallucination, the representation of every byte of data in cyberspace. Case had been the sharpest data-thief in the business, until vengeful former employers crippled his nervous system.",
+        "publisher": "Ace Books",
+        "publishedDate": "1984-07-01",
+        "pageCount": 271,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/6544825-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=neuromancer030"
+      }
+    },
+
+    {
+      "id": "book031",
+      "volumeInfo": {
+        "title": "The Art of Computer Programming",
+        "authors": ["Donald E. Knuth"],
+        "description": "The bible of all fundamental algorithms and the work that taught many of today's software developers most of what they know about computer programming. This multi-volume work is widely regarded as the definitive description of classical computer science.",
+        "publisher": "Addison-Wesley",
+        "publishedDate": "1968-01-01",
+        "pageCount": 672,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/5765169-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=book031"
+      }
+    },
+    {
+      "id": "book032",
+      "volumeInfo": {
+        "title": "JavaScript: The Good Parts",
+        "authors": ["Douglas Crockford"],
+        "description": "Most programming languages contain good and bad parts, but JavaScript has more than its share of the bad, having been developed and released in a hurry before it could be refined. This authoritative book scrapes away these bad features to reveal a subset of JavaScript that's more reliable and maintainable.",
+        "publisher": "O'Reilly Media",
+        "publishedDate": "2008-05-08",
+        "pageCount": 176,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/8479583-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=book032"
+      }
+    },
+    {
+      "id": "book033",
+      "volumeInfo": {
+        "title": "The Rust Programming Language",
+        "authors": ["Steve Klabnik", "Carol Nichols"],
+        "description": "The official book on the Rust programming language, written by the Rust development team at the Mozilla Foundation. Rust offers the performance of low-level code with the safety guarantees and expressiveness of a modern programming language.",
+        "publisher": "No Starch Press",
+        "publishedDate": "2019-08-12",
+        "pageCount": 560,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/10063684-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=book033"
+      }
+    },
+    {
+      "id": "book034",
+      "volumeInfo": {
+        "title": "Learning Python: Powerful Object-Oriented Programming",
+        "authors": ["Mark Lutz"],
+        "description": "Get a comprehensive, in-depth introduction to the core Python language with this hands-on book. Based on author Mark Lutz's popular training course, this updated fifth edition will help you quickly write efficient, high-quality code with Python.",
+        "publisher": "O'Reilly Media",
+        "publishedDate": "2013-06-12",
+        "pageCount": 1648,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/8479584-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=book034"
+      }
+    },
+    {
+      "id": "book035",
+      "volumeInfo": {
+        "title": "The Go Programming Language",
+        "authors": ["Alan A. A. Donovan", "Brian W. Kernighan"],
+        "description": "The Go Programming Language is the authoritative resource for any programmer who wants to learn Go. It shows how to write clear and idiomatic Go to solve real-world problems in the design of systems and applications.",
+        "publisher": "Addison-Wesley",
+        "publishedDate": "2015-11-05",
+        "pageCount": 380,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/8479585-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=book035"
+      }
+    },
+    {
+      "id": "book036",
+      "volumeInfo": {
+        "title": "Database Design for Mere Mortals",
+        "authors": ["Michael J. Hernandez"],
+        "description": "Database Design for Mere Mortals is a straightforward guide to relational database design that anyone can understand. This book provides a commonsense design methodology for developing databases that work in the real world.",
+        "publisher": "Addison-Wesley",
+        "publishedDate": "2013-03-01",
+        "pageCount": 672,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/8479586-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=book036"
+      }
+    },
+    {
+      "id": "book037",
+      "volumeInfo": {
+        "title": "Web Design with HTML, CSS, JavaScript and jQuery",
+        "authors": ["Jon Duckett"],
+        "description": "A full-color introduction to the basics of HTML and CSS from the publishers of the bestselling web design resource. Every chapter of this book introduces a new topic in a simple, visual way with straightforward code samples.",
+        "publisher": "Wiley",
+        "publishedDate": "2014-07-08",
+        "pageCount": 512,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/8479587-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=book037"
+      }
+    },
+    {
+      "id": "book038",
+      "volumeInfo": {
+        "title": "The Phoenix Project: A Novel About IT, DevOps, and Helping Your Business Win",
+        "authors": ["Gene Kim", "Kevin Behr", "George Spafford"],
+        "description": "Bill is an IT manager at Parts Unlimited. It's Tuesday morning and on his drive into the office, Bill gets a call from the CEO. The company's new IT initiative, code named Phoenix Project, is critical to the future of the business.",
+        "publisher": "IT Revolution Press",
+        "publishedDate": "2013-01-10",
+        "pageCount": 432,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/8479588-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=book038"
+      }
+    },
+    {
+      "id": "book039",
+      "volumeInfo": {
+        "title": "Crime and Punishment",
+        "authors": ["Fyodor Dostoevsky"],
+        "description": "One of the supreme masterpieces of world literature, Crime and Punishment tells the story of Raskolnikov, a destitute student tormented by his own thoughts who commits a terrible crime. The novel is a psychological exploration of guilt and redemption.",
+        "publisher": "The Russian Messenger",
+        "publishedDate": "1866-01-01",
+        "pageCount": 671,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/8231858-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=book039"
+      }
+    },
+    {
+      "id": "book040",
+      "volumeInfo": {
+        "title": "Hamlet",
+        "authors": ["William Shakespeare"],
+        "description": "The Tragedy of Hamlet, Prince of Denmark, is Shakespeare's longest play and one of the most powerful tragedies in the English language. The story of the Danish prince who must avenge his father's murder has captivated audiences for over four centuries.",
+        "publisher": "Simon & Schuster",
+        "publishedDate": "1603-01-01",
+        "pageCount": 342,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/8231859-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=book040"
+      }
+    },
+    {
+      "id": "book041",
+      "volumeInfo": {
+        "title": "The Old Man and the Sea",
+        "authors": ["Ernest Hemingway"],
+        "description": "The last novel Ernest Hemingway saw published, The Old Man and the Sea has proved itself to be one of the enduring works of American fiction. It is the story of an old Cuban fisherman and his supreme ordeal: a relentless, agonizing battle with a giant marlin.",
+        "publisher": "Charles Scribner's Sons",
+        "publishedDate": "1952-09-01",
+        "pageCount": 127,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/8231860-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=book041"
+      }
+    },
+    {
+      "id": "book042",
+      "volumeInfo": {
+        "title": "The Metamorphosis",
+        "authors": ["Franz Kafka"],
+        "description": "One of Kafka's best-known works, The Metamorphosis tells the story of salesman Gregor Samsa who wakes one morning to find himself inexplicably transformed into a huge insect. It is a haunting exploration of humanity, isolation, and the absurd.",
+        "publisher": "Kurt Wolff Verlag",
+        "publishedDate": "1915-10-01",
+        "pageCount": 201,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/8231861-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=book042"
+      }
+    },
+    {
+      "id": "book043",
+      "volumeInfo": {
+        "title": "2001: A Space Odyssey",
+        "authors": ["Arthur C. Clarke"],
+        "description": "On the Moon, an enigma is uncovered. So great are the implications of this discovery that for the first time, men are sent out deep into the solar system. The world-altering story of a voyage to Jupiter with the sentient computer HAL.",
+        "publisher": "New American Library",
+        "publishedDate": "1968-07-01",
+        "pageCount": 297,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/6544826-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=book043"
+      }
+    },
+    {
+      "id": "book044",
+      "volumeInfo": {
+        "title": "Do Androids Dream of Electric Sheep?",
+        "authors": ["Philip K. Dick"],
+        "description": "A masterpiece ahead of its time, this novel has been called the inspiration for the movie Blade Runner. By 2021, the World War has killed millions, driving entire species into extinction and sending mankind off-planet. Those who remain covet any living creature.",
+        "publisher": "Doubleday",
+        "publishedDate": "1968-03-01",
+        "pageCount": 244,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/6544827-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=book044"
+      }
+    },
+    {
+      "id": "book045",
+      "volumeInfo": {
+        "title": "The Left Hand of Darkness",
+        "authors": ["Ursula K. Le Guin"],
+        "description": "A groundbreaking work of science fiction, The Left Hand of Darkness tells the story of a lone human emissary to Winter, an alien world whose inhabitants can choose and change their gender. It is a landmark exploration of society, trust, and the nature of identity.",
+        "publisher": "Ace Books",
+        "publishedDate": "1969-03-01",
+        "pageCount": 304,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/6544828-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=book045"
+      }
+    },
+    {
+      "id": "book046",
+      "volumeInfo": {
+        "title": "I, Robot",
+        "authors": ["Isaac Asimov"],
+        "description": "The three laws of Robotics: a robot may not injure a human being, a robot must obey orders given by humans, and a robot must protect its own existence. These stories explore the time when humanity first began to live and work with robots.",
+        "publisher": "Gnome Press",
+        "publishedDate": "1950-12-02",
+        "pageCount": 253,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/6544829-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=book046"
+      }
+    },
+    {
+      "id": "book047",
+      "volumeInfo": {
+        "title": "Childhood's End",
+        "authors": ["Arthur C. Clarke"],
+        "description": "Without warning, giant silver ships from deep space appear in the skies above every major city on Earth. Manned by the Overlords, in fifty years they eliminate ignorance, disease, and poverty. Then this golden age ends, and the time of humanity's transformation begins.",
+        "publisher": "Ballantine Books",
+        "publishedDate": "1953-08-01",
+        "pageCount": 224,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/6544830-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=book047"
+      }
+    },
+    {
+      "id": "book048",
+      "volumeInfo": {
+        "title": "The Dispossessed",
+        "authors": ["Ursula K. Le Guin"],
+        "description": "A brilliant physicist decides to take action and makes the unprecedented journey to the utopian mother planet to challenge the complex structures of life and living. A powerful novel about the struggle between individual freedom and social responsibility.",
+        "publisher": "Harper & Row",
+        "publishedDate": "1974-05-01",
+        "pageCount": 387,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/6544831-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=book048"
+      }
+    },
+    {
+      "id": "book049",
+      "volumeInfo": {
+        "title": "Educated: A Memoir",
+        "authors": ["Tara Westover"],
+        "description": "An unforgettable memoir about a young girl who, kept out of school, leaves her survivalist family and goes on to earn a PhD from Cambridge University. A tale of fierce family loyalty and the grief that comes from severing one's closest ties.",
+        "publisher": "Random House",
+        "publishedDate": "2018-02-20",
+        "pageCount": 334,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/10063685-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=book049"
+      }
+    },
+    {
+      "id": "book050",
+      "volumeInfo": {
+        "title": "Becoming",
+        "authors": ["Michelle Obama"],
+        "description": "In her memoir, a work of deep reflection and mesmerizing storytelling, Michelle Obama invites readers into her world, chronicling the experiences that have shaped her. A powerful and inspiring story of a woman of soul and substance.",
+        "publisher": "Crown Publishing",
+        "publishedDate": "2018-11-13",
+        "pageCount": 448,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/10063686-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=book050"
+      }
+    }
+,
+    {
+      "id": "book051",
+      "volumeInfo": {
+        "title": "Homo Deus: A Brief History of Tomorrow",
+        "authors": ["Yuval Noah Harari"],
+        "description": "Yuval Noah Harari envisions a not-too-distant world in which we face a new set of challenges. Homo Deus explores the projects, dreams, and nightmares that will shape the twenty-first century—from overcoming death to creating artificial life.",
+        "publisher": "Harper",
+        "publishedDate": "2017-02-21",
+        "pageCount": 464,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/10063687-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=book051"
+      }
+    },
+    {
+      "id": "book052",
+      "volumeInfo": {
+        "title": "The Way of Kings",
+        "authors": ["Brandon Sanderson"],
+        "description": "Roshar is a world of stone and storms. Uncanny tempests of incredible power sweep across the rocky terrain so frequently that they have shaped ecology and civilization alike. The Way of Kings introduces the world of the Stormlight Archive epic fantasy series.",
+        "publisher": "Tor Books",
+        "publishedDate": "2010-08-31",
+        "pageCount": 1007,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/8479589-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=book052"
+      }
+    },
+    {
+      "id": "book053",
+      "volumeInfo": {
+        "title": "The Name of the Wind",
+        "authors": ["Patrick Rothfuss"],
+        "description": "Told in Kvothe's own voice, this is the tale of the magically gifted young man who grows to be the most notorious wizard his world has ever seen. A high-action story written with a poet's hand, The Name of the Wind is a masterpiece of fantasy literature.",
+        "publisher": "DAW Books",
+        "publishedDate": "2007-03-27",
+        "pageCount": 662,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/8479590-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=book053"
+      }
+    },
+    {
+      "id": "book054",
+      "volumeInfo": {
+        "title": "Guards! Guards!",
+        "authors": ["Terry Pratchett"],
+        "description": "This is where the dragons went. They lie beneath the city of Ankh-Morpork, not dead but dreaming. A secret society of hooded figures plans to summon a dragon to overthrow the Patrician. The City Watch must save the world from certain doom.",
+        "publisher": "Victor Gollancz",
+        "publishedDate": "1989-11-01",
+        "pageCount": 376,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/8479591-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=book054"
+      }
+    },
+    {
+      "id": "book055",
+      "volumeInfo": {
+        "title": "Good Omens: The Nice and Accurate Prophecies of Agnes Nutter, Witch",
+        "authors": ["Terry Pratchett", "Neil Gaiman"],
+        "description": "According to The Nice and Accurate Prophecies of Agnes Nutter, the world will end on a Saturday. Next Saturday, in fact. Just before dinner. The armies of Good and Evil are amassing, but the Antichrist has been misplaced.",
+        "publisher": "Victor Gollancz",
+        "publishedDate": "1990-05-10",
+        "pageCount": 400,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/8479592-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=book055"
+      }
+    },
+    {
+      "id": "book056",
+      "volumeInfo": {
+        "title": "Mistborn: The Final Empire",
+        "authors": ["Brandon Sanderson"],
+        "description": "For a thousand years the ash fell and no flowers bloomed. For a thousand years the Skaa slaved in misery and lived in fear while the Lord Ruler reigned with absolute power and ultimate terror. A new kind of fantasy epic with a unique magic system.",
+        "publisher": "Tor Books",
+        "publishedDate": "2006-07-17",
+        "pageCount": 541,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/8479593-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=book056"
+      }
+    },
+    {
+      "id": "book057",
+      "volumeInfo": {
+        "title": "The Design of Everyday Things",
+        "authors": ["Don Norman"],
+        "description": "Even the smartest among us can feel inept as we fail to figure out which light switch or oven burner to turn on. The fault lies not in ourselves, but in product design that ignores the needs of users. This book revolutionized the way we think about design.",
+        "publisher": "Basic Books",
+        "publishedDate": "2013-11-05",
+        "pageCount": 368,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/8479594-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=book057"
+      }
+    },
+    {
+      "id": "book058",
+      "volumeInfo": {
+        "title": "The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation",
+        "authors": ["Eric Ries"],
+        "description": "Most startups fail. But many of those failures are preventable. The Lean Startup is a new approach being adopted across the globe, changing the way companies are built and new products are launched through validated learning and rapid experimentation.",
+        "publisher": "Crown Business",
+        "publishedDate": "2011-09-13",
+        "pageCount": 336,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/8479595-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=book058"
+      }
+    },
+    {
+      "id": "book059",
+      "volumeInfo": {
+        "title": "Meditations",
+        "authors": ["Marcus Aurelius"],
+        "description": "Written in Greek by the only Roman emperor who was also a philosopher, Meditations is a timeless collection of thoughts and reflections on Stoic philosophy. It remains one of the greatest works of philosophy and a guide to living a good life.",
+        "publisher": "Penguin Classics",
+        "publishedDate": "0180-01-01",
+        "pageCount": 256,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/8231862-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=book059"
+      }
+    },
+    {
+      "id": "book060",
+      "volumeInfo": {
+        "title": "The Art of War",
+        "authors": ["Sun Tzu"],
+        "description": "The Art of War is an ancient Chinese military treatise dating from the 5th century BC. Attributed to the ancient Chinese military strategist Sun Tzu, the text is composed of 13 chapters on the philosophy of warfare and strategy.",
+        "publisher": "Shambhala Publications",
+        "publishedDate": "2005-01-11",
+        "pageCount": 273,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/8231863-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=book060"
+      }
+    },
+    {
+      "id": "book061",
+      "volumeInfo": {
+        "title": "Guns, Germs, and Steel: The Fates of Human Societies",
+        "authors": ["Jared Diamond"],
+        "description": "In this artful, informative, and delightful book, Jared Diamond convincingly argues that geographical and environmental factors shaped the modern world. A history of everybody for the last 13,000 years that answers the question of why some civilizations thrived.",
+        "publisher": "W. W. Norton",
+        "publishedDate": "1997-03-01",
+        "pageCount": 480,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/8231864-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=book061"
+      }
+    },
+    {
+      "id": "book062",
+      "volumeInfo": {
+        "title": "Man's Search for Meaning",
+        "authors": ["Viktor E. Frankl"],
+        "description": "Psychiatrist Viktor Frankl's memoir has riveted generations of readers with its descriptions of life in Nazi death camps and its lessons for spiritual survival. Based on his own experience and the stories of his patients, Frankl argues that we cannot avoid suffering but we can choose how to cope with it.",
+        "publisher": "Beacon Press",
+        "publishedDate": "1946-01-01",
+        "pageCount": 184,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/8231865-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=book062"
+      }
+    },
+    {
+      "id": "book063",
+      "volumeInfo": {
+        "title": "The Brothers Karamazov",
+        "authors": ["Fyodor Dostoevsky"],
+        "description": "The Brothers Karamazov is a passionate philosophical novel set in 19th-century Russia that enters deeply into the ethical debates of God, free will, and morality. It is a spiritual drama of moral struggles concerning faith, doubt, and reason.",
+        "publisher": "The Russian Messenger",
+        "publishedDate": "1880-11-01",
+        "pageCount": 796,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/8231866-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=book063"
+      }
+    },
+    {
+      "id": "book064",
+      "volumeInfo": {
+        "title": "A Farewell to Arms",
+        "authors": ["Ernest Hemingway"],
+        "description": "In 1918 Ernest Hemingway went to war. A Farewell to Arms is his classic novel of love during wartime, the unforgettable story of an American ambulance driver on the Italian front and his passion for a beautiful English nurse.",
+        "publisher": "Charles Scribner's Sons",
+        "publishedDate": "1929-09-27",
+        "pageCount": 332,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/8231867-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=book064"
+      }
+    },
+    {
+      "id": "book065",
+      "volumeInfo": {
+        "title": "The Trial",
+        "authors": ["Franz Kafka"],
+        "description": "Written in 1914 and published posthumously in 1925, The Trial is one of the most important novels of the twentieth century. It tells the story of Josef K., who is arrested and prosecuted by a remote, inaccessible authority, with the nature of his crime revealed to neither him nor the reader.",
+        "publisher": "Verlag Die Schmiede",
+        "publishedDate": "1925-04-26",
+        "pageCount": 255,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/8231868-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=book065"
+      }
+    },
+    {
+      "id": "book066",
+      "volumeInfo": {
+        "title": "Macbeth",
+        "authors": ["William Shakespeare"],
+        "description": "Shakespeare's dark and powerful tragedy of a man consumed by ambition and guilt. Macbeth tells the story of a brave Scottish general who receives a prophecy that one day he will become King of Scotland, and the terrible consequences of his actions.",
+        "publisher": "Simon & Schuster",
+        "publishedDate": "1606-01-01",
+        "pageCount": 288,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/8231869-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=book066"
+      }
+    },
+    {
+      "id": "book067",
+      "volumeInfo": {
+        "title": "Eloquent JavaScript: A Modern Introduction to Programming",
+        "authors": ["Marijn Haverbeke"],
+        "description": "Eloquent JavaScript dives into the JavaScript language to show programmers how to write beautiful, effective code. This revised edition reflects the current state of JavaScript and web browsers, with brand-new material on features like class notation and arrow functions.",
+        "publisher": "No Starch Press",
+        "publishedDate": "2018-12-04",
+        "pageCount": 472,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/10063688-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=book067"
+      }
+    },
+    {
+      "id": "book068",
+      "volumeInfo": {
+        "title": "Python Crash Course: A Hands-On, Project-Based Introduction to Programming",
+        "authors": ["Eric Matthes"],
+        "description": "Python Crash Course is the world's best-selling guide to the Python programming language. This fast-paced, thorough introduction to programming with Python will have you writing programs, solving problems, and making things that work in no time.",
+        "publisher": "No Starch Press",
+        "publishedDate": "2019-05-03",
+        "pageCount": 544,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/10063689-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=book068"
+      }
+    },
+    {
+      "id": "book069",
+      "volumeInfo": {
+        "title": "Designing Data-Intensive Applications",
+        "authors": ["Martin Kleppmann"],
+        "description": "Data is at the center of many challenges in system design today. This book helps you navigate the diverse landscape of tools for processing and storing data. It examines the pros and cons of various technologies for handling data at scale.",
+        "publisher": "O'Reilly Media",
+        "publishedDate": "2017-03-16",
+        "pageCount": 616,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/10063690-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=book069"
+      }
+    },
+    {
+      "id": "book070",
+      "volumeInfo": {
+        "title": "The DevOps Handbook: How to Create World-Class Agility",
+        "authors": ["Gene Kim", "Jez Humble", "Patrick Debois", "John Willis"],
+        "description": "Increase profitability, elevate work culture, and exceed productivity goals through DevOps practices. This book shows leaders how to replicate the world-class improvements in software delivery and organizational performance.",
+        "publisher": "IT Revolution Press",
+        "publishedDate": "2016-10-06",
+        "pageCount": 480,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/10063691-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=book070"
+      }
+    }
+,
+    {
+      "id": "book071",
+      "volumeInfo": {
+        "title": "Kubernetes in Action: Running Applications in the Cloud",
+        "authors": ["Marko Luksa"],
+        "description": "Kubernetes in Action teaches you to use Kubernetes to deploy container-based distributed applications. You'll start with an overview of Docker and Kubernetes before building your first cluster and learning to manage the lifecycle of cloud-native applications.",
+        "publisher": "Manning Publications",
+        "publishedDate": "2017-12-28",
+        "pageCount": 624,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/10063692-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=book071"
+      }
+    },
+    {
+      "id": "book072",
+      "volumeInfo": {
+        "title": "Code Complete: A Practical Handbook of Software Construction",
+        "authors": ["Steve McConnell"],
+        "description": "Widely considered one of the best practical guides to programming, Steve McConnell's original Code Complete has been helping developers write better software for more than a decade. This classic book provides a comprehensive guide to software craftsmanship.",
+        "publisher": "Microsoft Press",
+        "publishedDate": "2004-06-09",
+        "pageCount": 960,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/8479596-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=book072"
+      }
+    },
+    {
+      "id": "book073",
+      "volumeInfo": {
+        "title": "Structure and Interpretation of Computer Programs",
+        "authors": ["Harold Abelson", "Gerald Jay Sussman"],
+        "description": "Structure and Interpretation of Computer Programs has had a dramatic impact on computer science curricula over the past decade. This book teaches the principles of programming and the design of programs using Scheme.",
+        "publisher": "MIT Press",
+        "publishedDate": "1996-07-25",
+        "pageCount": 657,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/8479597-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=book073"
+      }
+    },
+    {
+      "id": "book074",
+      "volumeInfo": {
+        "title": "The Mythical Man-Month: Essays on Software Engineering",
+        "authors": ["Frederick P. Brooks Jr."],
+        "description": "Few books on software project management have been as influential and timeless as The Mythical Man-Month. With a blend of software engineering facts and thought-provoking opinions, Fred Brooks offers insight for anyone managing complex projects.",
+        "publisher": "Addison-Wesley",
+        "publishedDate": "1995-08-12",
+        "pageCount": 336,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/8479598-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=book074"
+      }
+    },
+    {
+      "id": "book075",
+      "volumeInfo": {
+        "title": "Zero to One: Notes on Startups, or How to Build the Future",
+        "authors": ["Peter Thiel", "Blake Masters"],
+        "description": "The great secret of our time is that there are still uncharted frontiers to explore and new inventions to create. Zero to One presents at once an optimistic view of the future of progress in America and a new way of thinking about innovation.",
+        "publisher": "Crown Business",
+        "publishedDate": "2014-09-16",
+        "pageCount": 224,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/10063693-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=book075"
+      }
+    },
+    {
+      "id": "book076",
+      "volumeInfo": {
+        "title": "The Psychology of Money: Timeless Lessons on Wealth",
+        "authors": ["Morgan Housel"],
+        "description": "Doing well with money isn't necessarily about what you know. It's about how you behave. And behavior is hard to teach, even to really smart people. This book uses short stories to explore the strange ways people think about money.",
+        "publisher": "Harriman House",
+        "publishedDate": "2020-09-08",
+        "pageCount": 256,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/10063694-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=book076"
+      }
+    },
+    {
+      "id": "book077",
+      "volumeInfo": {
+        "title": "A Short History of Nearly Everything",
+        "authors": ["Bill Bryson"],
+        "description": "Bill Bryson describes himself as a reluctant traveler, but even when he stays home he can't contain his curiosity about the world around him. This book is his quest to understand everything that has happened from the Big Bang to the rise of civilization.",
+        "publisher": "Broadway Books",
+        "publishedDate": "2003-05-06",
+        "pageCount": 544,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/8231870-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=book077"
+      }
+    },
+    {
+      "id": "book078",
+      "volumeInfo": {
+        "title": "The Republic",
+        "authors": ["Plato"],
+        "description": "Written in approximately 380 BC, The Republic is Plato's best-known work and one of the world's most influential works of philosophy and political theory. It explores justice, the just city-state, and the just individual.",
+        "publisher": "Penguin Classics",
+        "publishedDate": "2003-05-29",
+        "pageCount": 416,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/8231871-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=book078"
+      }
+    },
+    {
+      "id": "book079",
+      "volumeInfo": {
+        "title": "Influence: The Psychology of Persuasion",
+        "authors": ["Robert B. Cialdini"],
+        "description": "The widely adopted, now classic book on influence and persuasion. Dr. Robert Cialdini explains the psychology of why people say yes and how to apply these understandings in business and everyday situations.",
+        "publisher": "Harper Business",
+        "publishedDate": "2006-12-26",
+        "pageCount": 320,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/8231872-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=book079"
+      }
+    },
+    {
+      "id": "book080",
+      "volumeInfo": {
+        "title": "Deep Work: Rules for Focused Success in a Distracted World",
+        "authors": ["Cal Newport"],
+        "description": "Deep work is the ability to focus without distraction on a cognitively demanding task. Cal Newport flips the narrative on impact in a connected age, arguing that the ability to perform deep work is becoming increasingly rare and increasingly valuable.",
+        "publisher": "Grand Central Publishing",
+        "publishedDate": "2016-01-05",
+        "pageCount": 304,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/10063695-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=book080"
+      }
+    },
+    {
+      "id": "book081",
+      "volumeInfo": {
+        "title": "Rendezvous with Rama",
+        "authors": ["Arthur C. Clarke"],
+        "description": "At first, only a few things are known about the celestial object that astronomers dub Rama. It is huge, weighing more than ten trillion tons. And it is hurtling through the solar system at inconceivable speed. A masterpiece of hard science fiction.",
+        "publisher": "Victor Gollancz",
+        "publishedDate": "1973-06-01",
+        "pageCount": 256,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/6544832-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=book081"
+      }
+    },
+    {
+      "id": "book082",
+      "volumeInfo": {
+        "title": "The Man in the High Castle",
+        "authors": ["Philip K. Dick"],
+        "description": "It's America in 1962. Slavery is legal once again. The few Jews who still survive hide under assumed names. In this world, the weights of history have turned and the Axis powers won World War II. An alternate history masterpiece.",
+        "publisher": "G. P. Putnam's Sons",
+        "publishedDate": "1962-10-01",
+        "pageCount": 259,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/6544833-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=book082"
+      }
+    },
+    {
+      "id": "book083",
+      "volumeInfo": {
+        "title": "Clean Architecture: A Craftsman's Guide to Software Structure and Design",
+        "authors": ["Robert C. Martin"],
+        "description": "Building upon the success of Clean Code, legendary software craftsman Robert C. Martin presents the universal rules of software architecture that will help you dramatically improve developer productivity throughout the life of any software system.",
+        "publisher": "Prentice Hall",
+        "publishedDate": "2017-09-20",
+        "pageCount": 432,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/10063696-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=book083"
+      }
+    },
+    {
+      "id": "book084",
+      "volumeInfo": {
+        "title": "Domain-Driven Design: Tackling Complexity in the Heart of Software",
+        "authors": ["Eric Evans"],
+        "description": "This book provides a broad framework for making design decisions and a vocabulary for discussing domain design. It offers a systematic approach to domain-driven design, presenting an extensive set of design best practices and fundamental principles.",
+        "publisher": "Addison-Wesley",
+        "publishedDate": "2003-08-30",
+        "pageCount": 560,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/8479599-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=book084"
+      }
+    },
+    {
+      "id": "book085",
+      "volumeInfo": {
+        "title": "Continuous Delivery: Reliable Software Releases through Build, Test, and Deploy Automation",
+        "authors": ["Jez Humble", "David Farley"],
+        "description": "Getting software released to users is often a painful, risky, and time-consuming process. This groundbreaking book sets out the principles and technical practices that enable rapid, incremental delivery of high-quality, valuable new functionality.",
+        "publisher": "Addison-Wesley",
+        "publishedDate": "2010-07-27",
+        "pageCount": 512,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/10063697-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=book085"
+      }
+    },
+    {
+      "id": "book086",
+      "volumeInfo": {
+        "title": "The Colour of Magic",
+        "authors": ["Terry Pratchett"],
+        "description": "On a world supported on the back of a giant turtle, a gleeful, explosive, wickedly eccentric expedition sets out. There's an inept wizard, a naive tourist whose luggage moves on hundreds of little legs, and of course the edge of the world.",
+        "publisher": "Colin Smythe",
+        "publishedDate": "1983-11-24",
+        "pageCount": 288,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/8479600-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=book086"
+      }
+    },
+    {
+      "id": "book087",
+      "volumeInfo": {
+        "title": "War and Peace",
+        "authors": ["Leo Tolstoy"],
+        "description": "Epic in scale, War and Peace delineates in graphic detail events leading up to Napoleon's invasion of Russia, and the impact of the Napoleonic era on Tsarist society. It is regarded as one of the most important works of world literature.",
+        "publisher": "The Russian Messenger",
+        "publishedDate": "1869-01-01",
+        "pageCount": 1225,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/8231873-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=book087"
+      }
+    },
+    {
+      "id": "book088",
+      "volumeInfo": {
+        "title": "One Hundred Years of Solitude",
+        "authors": ["Gabriel Garcia Marquez"],
+        "description": "One of the twentieth century's enduring works, One Hundred Years of Solitude tells the story of the rise and fall of the mythical town of Macondo through the history of the Buendia family. A masterpiece of magical realism.",
+        "publisher": "Harper & Row",
+        "publishedDate": "1970-06-01",
+        "pageCount": 417,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/8231874-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=book088"
+      }
+    },
+    {
+      "id": "book089",
+      "volumeInfo": {
+        "title": "Site Reliability Engineering: How Google Runs Production Systems",
+        "authors": ["Betsy Beyer", "Chris Jones", "Jennifer Petoff", "Niall Richard Murphy"],
+        "description": "In this collection of essays and articles, key members of Google's Site Reliability Team explain how and why their commitment to the entire lifecycle has enabled the company to successfully build, deploy, monitor, and maintain some of the largest software systems in the world.",
+        "publisher": "O'Reilly Media",
+        "publishedDate": "2016-03-23",
+        "pageCount": 552,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/10063698-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=book089"
+      }
+    },
+    {
+      "id": "book090",
+      "volumeInfo": {
+        "title": "The Time Machine",
+        "authors": ["H.G. Wells"],
+        "description": "A compelling science fiction classic, The Time Machine tells the story of a Victorian scientist who travels to the year 802,701 AD. There he discovers that humanity has evolved into two distinct species: the gentle Eloi and the subterranean Morlocks.",
+        "publisher": "William Heinemann",
+        "publishedDate": "1895-05-07",
+        "pageCount": 118,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/6544834-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=book090"
+      }
+    },
+    {
+      "id": "book091",
+      "volumeInfo": {
+        "title": "Microservices Patterns: With Examples in Java",
+        "authors": ["Chris Richardson"],
+        "description": "Microservices Patterns teaches you how to develop and deploy production-quality microservices-based applications. This invaluable set of design patterns builds on decades of distributed system experience, adding new patterns for writing services and composing them.",
+        "publisher": "Manning Publications",
+        "publishedDate": "2018-11-19",
+        "pageCount": 520,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/10063699-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=book091"
+      }
+    },
+    {
+      "id": "book092",
+      "volumeInfo": {
+        "title": "The Pragmatic Programmer's Guide to Git",
+        "authors": ["Travis Swicegood"],
+        "description": "Version control is the cornerstone of modern software development. This practical guide teaches you how to use Git effectively for everyday programming tasks, from basic commits to advanced branching strategies and collaborative workflows.",
+        "publisher": "Pragmatic Bookshelf",
+        "publishedDate": "2010-08-28",
+        "pageCount": 200,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/10063700-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=book092"
+      }
+    },
+    {
+      "id": "book093",
+      "volumeInfo": {
+        "title": "Fahrenheit 451",
+        "authors": ["Ray Bradbury"],
+        "description": "Guy Montag is a fireman. His job is to destroy the most illegal of commodities, the printed book, along with the houses in which they are hidden. A dystopian masterpiece about a future American society where books are outlawed and firemen burn any that are found.",
+        "publisher": "Ballantine Books",
+        "publishedDate": "1953-10-19",
+        "pageCount": 249,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/6544835-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=book093"
+      }
+    },
+    {
+      "id": "book094",
+      "volumeInfo": {
+        "title": "Head First Design Patterns: Building Extensible and Maintainable Object-Oriented Software",
+        "authors": ["Eric Freeman", "Elisabeth Robson"],
+        "description": "You know you don't want to reinvent the wheel, so you look to design patterns—the lessons learned by those who've faced the same problems. With Head First Design Patterns, you'll learn design principles and patterns in a way that won't put you to sleep.",
+        "publisher": "O'Reilly Media",
+        "publishedDate": "2020-11-24",
+        "pageCount": 672,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/10063701-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=book094"
+      }
+    },
+    {
+      "id": "book095",
+      "volumeInfo": {
+        "title": "The World According to Physics",
+        "authors": ["Jim Al-Khalili"],
+        "description": "A short, accessible guide to modern physics by one of its most engaging communicators. Jim Al-Khalili explores the fundamental concepts of space, time, energy, and matter, and explains how they shape our understanding of the world.",
+        "publisher": "Princeton University Press",
+        "publishedDate": "2020-03-10",
+        "pageCount": 224,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/10063702-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=book095"
+      }
+    },
+    {
+      "id": "book096",
+      "volumeInfo": {
+        "title": "System Design Interview: An Insider's Guide",
+        "authors": ["Alex Xu"],
+        "description": "System design questions have become a standard part of the software engineering interview process. This book provides a step-by-step framework for how to tackle a system design question, with real-world examples of designing large-scale distributed systems.",
+        "publisher": "Byte Code LLC",
+        "publishedDate": "2020-06-12",
+        "pageCount": 322,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/10063703-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=book096"
+      }
+    },
+    {
+      "id": "book097",
+      "volumeInfo": {
+        "title": "The Code Breaker: Jennifer Doudna, Gene Editing, and the Future of the Human Race",
+        "authors": ["Walter Isaacson"],
+        "description": "The bestselling author of Leonardo da Vinci and Steve Jobs returns with a gripping account of how Nobel Prize winner Jennifer Doudna and her colleagues launched a revolution that will allow us to cure diseases and fend off viruses.",
+        "publisher": "Simon & Schuster",
+        "publishedDate": "2021-03-09",
+        "pageCount": 560,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/10063704-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=book097"
+      }
+    },
+    {
+      "id": "book098",
+      "volumeInfo": {
+        "title": "Slaughterhouse-Five",
+        "authors": ["Kurt Vonnegut"],
+        "description": "Slaughterhouse-Five is one of the world's great anti-war books. Centering on the infamous World War II firebombing of Dresden, Billy Pilgrim's odyssey through time reflects the mythic journey of our own fractured lives as we search for meaning in what we fear most.",
+        "publisher": "Delacorte Press",
+        "publishedDate": "1969-03-31",
+        "pageCount": 275,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/6544836-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=book098"
+      }
+    },
+    {
+      "id": "book099",
+      "volumeInfo": {
+        "title": "Programming Rust: Fast, Safe Systems Development",
+        "authors": ["Jim Blandy", "Jason Orendorff", "Leonora F.S. Tindall"],
+        "description": "Systems programming provides the foundation for the world's computation. Developing performance-sensitive code requires a programming language that puts programmers in control of how memory, processor time, and other system resources are used.",
+        "publisher": "O'Reilly Media",
+        "publishedDate": "2021-06-22",
+        "pageCount": 738,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/10063705-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=book099"
+      }
+    },
+    {
+      "id": "book100",
+      "volumeInfo": {
+        "title": "The History of the World in Six Glasses",
+        "authors": ["Tom Standage"],
+        "description": "From beer to Coca-Cola, the six drinks that have helped shape human history. Tom Standage relates the fascinating story of humanity from the Stone Age to the twenty-first century through the lens of six beverages that have marked turning points in world history.",
+        "publisher": "Walker & Company",
+        "publishedDate": "2005-05-16",
+        "pageCount": 311,
+        "imageLinks": {
+          "thumbnail": "https://covers.openlibrary.org/b/id/8231875-M.jpg"
+        },
+        "previewLink": "https://books.google.com/books?id=book100"
+      }
+    }
+  ]
+}

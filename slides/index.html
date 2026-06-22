@@ -1,0 +1,1140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Angular Odyssey: From Modules to Signals</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/moon.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/highlight/monokai.css"
+    />
+    <style>
+      .comparison-table-wrapper {
+        overflow-x: auto;
+        max-width: 95vw;
+        margin: 0 auto;
+      }
+      .comparison-table {
+        font-size: 0.42em;
+        border-collapse: collapse;
+        width: 100%;
+      }
+      .comparison-table th,
+      .comparison-table td {
+        border: 1px solid #555;
+        padding: 4px 6px;
+        text-align: center;
+      }
+      .comparison-table th {
+        background: rgba(100, 100, 200, 0.2);
+      }
+      .comparison-table tr:nth-child(even) {
+        background: rgba(255, 255, 255, 0.03);
+      }
+      .comparison-table td:first-child {
+        text-align: left;
+        font-weight: bold;
+        white-space: nowrap;
+      }
+      .port-table {
+        font-size: 0.7em;
+        border-collapse: collapse;
+        margin: 0 auto;
+      }
+      .port-table th,
+      .port-table td {
+        border: 1px solid #555;
+        padding: 8px 16px;
+        text-align: center;
+      }
+      .port-table th {
+        background: rgba(100, 100, 200, 0.2);
+      }
+      .demo-iframe {
+        width: 90%;
+        height: 500px;
+        border: 2px solid #555;
+        border-radius: 8px;
+        margin: 0 auto;
+        display: block;
+        background: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <!-- Slide 1: Title -->
+        <section
+          data-background-image="assets/title.png"
+          data-background-size="cover"
+        >
+          <div
+            style="
+              background: rgba(0, 0, 0, 0.55);
+              padding: 30px 50px;
+              border-radius: 12px;
+              display: inline-block;
+            "
+          >
+            <h1 style="font-size: 1.8em; margin: 0">Angular Odyssey</h1>
+            <h2 style="font-size: 1.4em; margin: 0.3em 0">
+              From Modules to Signals
+            </h2>
+            <p style="margin-top: 0.8em; margin-bottom: 0">
+              <strong>Bunyamin Coskuner</strong><br />
+              Senior Software Engineer at Dreamix
+            </p>
+          </div>
+          <aside class="notes">
+            Welcome everyone. Today we're going on an odyssey through Angular's
+            evolution — from the NgModule era all the way to the fully reactive,
+            signal-based framework we have today. We'll look at the same app
+            built 6 different times, each using the actual Angular version of
+            its era. Our journey starts with a simple boat...
+          </aside>
+        </section>
+
+        <!-- Slide 2: The Journey (Roadmap as Agenda) -->
+        <section>
+          <section
+            data-background-image="assets/roadmap.png"
+            data-background-size="contain"
+            data-background-color="#1a1a2e"
+          >
+            <aside class="notes">
+              This is our roadmap — 6 islands, each representing an Angular era.
+              We'll sail from island to island, visiting each milestone
+              chronologically. The journey spans from 2017 (Angular 4) to 2026
+              (Angular 22).
+            </aside>
+          </section>
+        </section>
+
+        <!-- Slide 3: The Application -->
+        <section>
+          <section
+            data-background-image="assets/app-features.png"
+            data-background-size="contain"
+            data-background-color="#1a1a2e"
+          >
+            <aside class="notes">
+              Same features in every app: book search with the mock API,
+              infinite scroll, book detail with related books, favorites
+              persisted in localStorage, profile form with validation, auth
+              guard that redirects to profile if no display name set, lazy
+              loading for all feature routes, and reactive form validation.
+            </aside>
+          </section>
+          <section
+            data-background-image="assets/six-apps.png"
+            data-background-size="contain"
+            data-background-color="#1a1a2e"
+          >
+            <aside class="notes">
+              Six apps running in parallel — each docked at its own port. All
+              connect to a shared mock API on port 3000. You can run them all
+              simultaneously with start-all.sh. Each uses the actual Angular
+              version of its era with the correct Node version.
+            </aside>
+          </section>
+          <section>
+            <h3>Here's what it looks like</h3>
+            <iframe src="http://localhost:4205" class="demo-iframe"></iframe>
+            <p style="font-size: 0.5em; color: #8be9fd">
+              v22 (Angular 22) — http://localhost:4205
+            </p>
+          </section>
+        </section>
+
+        <!-- Slide 3: v4-v9 Section -->
+        <section
+          data-background-gradient="radial-gradient(circle, #2c1810 0%, #1a1a2e 100%)"
+        >
+          <section
+            data-background-image="assets/island-v4-v9.png"
+            data-background-size="contain"
+            data-background-color="#1a1a2e"
+          ></section>
+          <section>
+            <h3>NgModule & Class Guard</h3>
+            <pre><code class="language-typescript" data-trim>
+@NgModule({
+  declarations: [AppComponent, SearchComponent],
+  imports: [BrowserModule, HttpClientModule, ReactiveFormsModule],
+  bootstrap: [AppComponent]
+})
+export class AppModule {}
+          </code></pre>
+            <pre><code class="language-typescript" data-trim>
+@Injectable({ providedIn: 'root' })
+export class AuthGuard implements CanActivate {
+  constructor(private profileService: ProfileService, private router: Router) {}
+  canActivate(): boolean | UrlTree {
+    return this.profileService.hasDisplayName() 
+      ? true : this.router.createUrlTree(['/profile']);
+  }
+}
+          </code></pre>
+            <aside class="notes">
+              The "classic" Angular era. Everything lives in NgModules — every
+              component must be declared, every module imported. Guards are full
+              classes implementing CanActivate. DI is constructor-based.
+              providedIn:'root' (v6+) was the first tree-shaking improvement.
+            </aside>
+          </section>
+          <section>
+            <h3>State Management (BehaviorSubject)</h3>
+            <pre><code class="language-typescript" data-trim>
+// v4-v9: BehaviorSubject pattern
+@Injectable({ providedIn: 'root' })
+export class BookSearchService {
+  private booksSubject = new BehaviorSubject&lt;Book[]&gt;([]);
+  private isLoadingSubject = new BehaviorSubject&lt;boolean&gt;(false);
+
+  books$ = this.booksSubject.asObservable();
+  isLoading$ = this.isLoadingSubject.asObservable();
+
+  constructor(private http: HttpClient) {}
+
+  search(query: string): void {
+    this.isLoadingSubject.next(true);
+    this.http.get&lt;GoogleBooksApiResponse&gt;(url).subscribe({
+      next: (res) =&gt; { this.booksSubject.next(res.items.map(mapToBook)); }
+    });
+  }
+}
+          </code></pre>
+          </section>
+          <section>
+            <h3>Template (Structural Directives)</h3>
+            <pre><code class="language-html" data-trim>
+&lt;!-- v4-v9: *ngIf / *ngFor --&gt;
+&lt;ng-container *ngIf="bookSearchService.books.length &gt; 0; else empty"&gt;
+  &lt;div class="book-grid"&gt;
+    &lt;app-book-card *ngFor="let book of bookSearchService.books"
+                   [book]="book"&gt;
+    &lt;/app-book-card&gt;
+  &lt;/div&gt;
+&lt;/ng-container&gt;
+&lt;ng-template #empty&gt;
+  &lt;p&gt;No books found&lt;/p&gt;
+&lt;/ng-template&gt;
+          </code></pre>
+          </section>
+          <section>
+            <h3>Ivy Begins (v6–v9)</h3>
+            <pre><code class="language-typescript" data-trim>
+// The biggest internal rewrite since Angular 2:
+// v6  (2018) — Ivy announced, under active development
+// v8  (2019) — Ivy preview (opt-in flag)
+// v9  (2020) — Ivy enabled by default!
+
+// What Ivy brought:
+// ✓ 30% smaller bundles for small apps
+// ✓ 40-50% faster tests
+// ✓ AOT compilation in dev mode by default
+// ✓ Better debugging (ng.getComponent() in DevTools)
+          </code></pre>
+            <p style="font-size: 0.6em; color: #8be9fd">
+              The new rendering engine — announced in v6, default by v9. But
+              View Engine sticks around until v13...
+            </p>
+            <aside class="notes">
+              Ivy was Angular's biggest bet. The old View Engine compiled
+              everything as a single unit — Ivy compiles each component
+              independently. This took 3.5 years to fully roll out. By v9 it's
+              the default, but View Engine isn't removed yet — that happens in
+              the next era (v13).
+            </aside>
+          </section>
+          <section>
+            <h3>Live Demo — v4–v9</h3>
+            <iframe src="http://localhost:4200" class="demo-iframe"></iframe>
+            <p style="font-size: 0.5em; color: #8be9fd">
+              http://localhost:4200 — Angular 9
+            </p>
+          </section>
+        </section>
+
+        <!-- Slide 4: v10-v13 Section -->
+        <section
+          data-background-gradient="radial-gradient(circle, #1a2a3a 0%, #1a1a2e 100%)"
+        >
+          <section
+            data-background-image="assets/island-v10-v13.png"
+            data-background-size="contain"
+            data-background-color="#1a1a2e"
+          ></section>
+          <section>
+            <h3>What Changed</h3>
+            <pre><code class="language-typescript" data-trim>
+// Typed Reactive Forms (v14 backported concept, strict in v13)
+profileForm = this.fb.group({
+  firstName: ['', [Validators.required, Validators.minLength(2)]],
+  email: ['', [Validators.required, Validators.pattern(/.+@.+/)]],
+});
+
+// Optional chaining in templates
+{{ book?.volumeInfo?.title }}
+{{ book?.volumeInfo?.authors?.join(', ') || 'Unknown' }}
+          </code></pre>
+            <pre><code class="language-typescript" data-trim>
+// Strict mode — tsconfig.json
+{
+  "compilerOptions": {
+    "strict": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true
+  },
+  "angularCompilerOptions": {
+    "strictTemplates": true,
+    "strictInjectionParameters": true
+  }
+}
+          </code></pre>
+            <aside class="notes">
+              Strict mode means you get compile-time errors for things that
+              would previously silently fail at runtime — accessing a
+              possibly-null property, using the wrong type in a template
+              binding, or forgetting a required input. It made Angular apps
+              significantly more reliable but required more explicit typing
+              throughout the codebase.
+            </aside>
+          </section>
+          <section>
+            <h3>Typed Forms</h3>
+            <pre><code class="language-typescript" data-trim>
+// v10-v13: Typed reactive forms (Angular 13+)
+profileForm = this.fb.group({
+  firstName: ['', [Validators.required, Validators.minLength(2)]],
+  lastName: ['', [Validators.required, Validators.minLength(2)]],
+  email: ['', [Validators.required, Validators.pattern(/.+@.+/)]],
+  displayName: ['', [Validators.required, Validators.minLength(2)]],
+});
+
+// Type-safe access:
+const email = this.profileForm.controls.email.value; // string | null
+          </code></pre>
+          </section>
+          <section>
+            <h3>Ivy Completed (v13)</h3>
+            <pre><code class="language-typescript" data-trim>
+// v12 (2021) — View Engine deprecated
+// v13 (2021) — View Engine fully removed
+
+// Ivy is now the only renderer:
+// ✓ Independent component compilation
+// ✓ No more ComponentFactoryResolver
+// ✓ Smaller, faster, debuggable
+// → The door is open for standalone components (v14)
+          </code></pre>
+            <p style="font-size: 0.6em; color: #8be9fd">
+              After 8 major releases (v6→v13), the migration is done. View
+              Engine is gone. Ivy's independent compilation model enables
+              standalone components in the next era.
+            </p>
+            <aside class="notes">
+              This is where Ivy's journey ends. IE11 support was also dropped in
+              v13, enabling modern JS output. These two cleanups — removing View
+              Engine and IE11 — unlocked everything that follows.
+            </aside>
+          </section>
+          <section>
+            <h3>Live Demo — v10–v13</h3>
+            <iframe src="http://localhost:4201" class="demo-iframe"></iframe>
+            <p style="font-size: 0.5em; color: #8be9fd">
+              http://localhost:4201 — Angular 13
+            </p>
+            <aside class="notes">
+              This era was mostly about cleanup and strictness: IE11 dropped,
+              View Engine removed, strict mode by default. Not flashy, but it
+              set the foundation for what came next. Typed forms landed here —
+              notice how controls.email.value is typed as string|null.
+            </aside>
+          </section>
+        </section>
+
+        <!-- Slide 5: v14-v16 Section -->
+        <section
+          data-background-gradient="radial-gradient(circle, #0d3320 0%, #1a1a2e 100%)"
+        >
+          <section
+            data-background-image="assets/island-v14-v16.png"
+            data-background-size="contain"
+            data-background-color="#1a1a2e"
+          >
+            <aside class="notes">
+              Important context: In late 2021, Angular's original tech lead (who
+              had been there since 2010) left after 11.5 years. New leadership
+              took over product and engineering direction. This kicked off what
+              the community calls the "Angular Renaissance" — a bold push toward
+              simplicity, reactivity, and modern DX. The pace of innovation
+              accelerated dramatically from here: v14 (standalone), v16
+              (signals), v17 (@if/@for, @defer) all landed in rapid succession.
+            </aside>
+          </section>
+          <section>
+            <h3>Standalone Components</h3>
+            <pre><code class="language-typescript" data-trim>
+@Component({
+  standalone: true,
+  imports: [CommonModule, RouterLink, BookCardComponent],
+  template: `...`
+})
+export class FavoritesComponent {
+  favoritesService = inject(FavoritesService);
+}
+          </code></pre>
+            <p style="font-size: 0.6em; color: #8be9fd">
+              No NgModule needed! Components declare their own imports.
+            </p>
+            <aside class="notes">
+              The biggest architectural shift since Angular 2. Standalone means
+              a component is self-contained — declares its own dependencies. No
+              more SharedModule, no more barrel imports. inject() replaces
+              constructor DI — simpler, works in functions, tree-shakable. Over
+              90% of Angular devs adopted standalone by v19.
+            </aside>
+          </section>
+          <section>
+            <h3>Functional Guard</h3>
+            <pre><code class="language-typescript" data-trim>
+export const authGuard: CanActivateFn = () => {
+  const profileService = inject(ProfileService);
+  const router = inject(Router);
+  return profileService.hasDisplayName() 
+    ? true : router.createUrlTree(['/profile']);
+};
+          </code></pre>
+            <p style="font-size: 0.6em; color: #8be9fd">
+              No class, no implements, no constructor — just a function.
+            </p>
+          </section>
+          <section>
+            <h3>bootstrapApplication() vs bootstrapModule()</h3>
+            <pre><code class="language-typescript" data-trim>
+// BEFORE (v4-v13): Module-based bootstrap
+platformBrowserDynamic().bootstrapModule(AppModule);
+
+// AFTER (v14-v16): Application-based bootstrap
+bootstrapApplication(AppComponent, {
+  providers: [
+    provideRouter(routes, withComponentInputBinding()),
+    provideHttpClient(),
+  ]
+});
+          </code></pre>
+          </section>
+          <section>
+            <h3>loadComponent vs loadChildren</h3>
+            <pre><code class="language-typescript" data-trim>
+// BEFORE (v4-v13): Lazy load a module
+{ path: 'search', loadChildren: () =&gt;
+    import('./search/search.module').then(m =&gt; m.SearchModule) }
+
+// AFTER (v14-v16): Lazy load a component directly
+{ path: 'search', loadComponent: () =&gt;
+    import('./search/search.component').then(m =&gt; m.SearchComponent) }
+          </code></pre>
+          </section>
+          <section>
+            <h3>Signals Arrive (v16 Developer Preview)</h3>
+            <pre><code class="language-typescript" data-trim>
+// v16: Signals introduced — the future of Angular state
+import { signal, computed, effect } from '@angular/core';
+
+const count = signal(0);
+const doubled = computed(() =&gt; count() * 2);
+
+effect(() =&gt; console.log('Count:', count()));
+
+count.set(5); // logs "Count: 5"
+          </code></pre>
+            <pre><code class="language-typescript" data-trim>
+// RxJS interop: bridge between signals and observables
+import { toSignal, toObservable } from '@angular/core/rxjs-interop';
+
+data = toSignal(this.http.get('/api/data'), { initialValue: [] });
+          </code></pre>
+            <p style="font-size: 0.55em; color: #8be9fd">
+              Signals landed in v16 as dev preview. Made Zone.js optional and
+              enabled fine-grained reactivity. Stable in v17+.
+            </p>
+            <aside class="notes">
+              Signals were the most anticipated feature since Ivy. Inspired by
+              SolidJS and Preact signals. The Angular RFC got 682 comments!
+              toSignal/toObservable bridge the RxJS world to signals. TC39 is
+              now working on adding signals to JavaScript itself, with Angular's
+              implementation as reference. Effect was kept in dev preview longer
+              because they wanted to get the semantics right.
+            </aside>
+          </section>
+          <section>
+            <h3>Live Demo — v14–v16</h3>
+            <iframe src="http://localhost:4202" class="demo-iframe"></iframe>
+            <p style="font-size: 0.5em; color: #8be9fd">
+              http://localhost:4202 — Angular 16
+            </p>
+          </section>
+        </section>
+
+        <!-- Slide 6: v17-v19 Section -->
+        <section
+          data-background-gradient="radial-gradient(circle, #3a1a0a 0%, #1a1a2e 100%)"
+        >
+          <section
+            data-background-image="assets/island-v17-v19.png"
+            data-background-size="contain"
+            data-background-color="#1a1a2e"
+          ></section>
+          <section>
+            <h3>@if / @for Control Flow</h3>
+            <pre><code class="language-html" data-trim>
+@if (books().length > 0) {
+  @for (book of books(); track book.id) {
+    &lt;app-book-card [book]="book" /&gt;
+  }
+} @else {
+  &lt;p&gt;No results found&lt;/p&gt;
+}
+          </code></pre>
+            <p style="font-size: 0.6em; color: #8be9fd">
+              Replaces *ngIf / *ngFor — <code>track</code> is mandatory, up to
+              90% faster than *ngFor in benchmarks.
+            </p>
+            <aside class="notes">
+              The new block syntax is closer to JavaScript (if/else/for vs
+              *ngIf/*ngFor). Track is mandatory — a pain point with *ngFor where
+              people forgot trackBy and got performance issues. The 90%
+              improvement comes from a new diffing algorithm. @else if is now
+              possible — was impossible with *ngIf. Structural directives were
+              deprecated in v20 and removed in v22.
+            </aside>
+          </section>
+          <section>
+            <h3>Signals Replace BehaviorSubject</h3>
+            <pre><code class="language-typescript" data-trim>
+// v17-v19: Signals for state — no more BehaviorSubject!
+readonly books = signal&lt;Book[]&gt;([]);
+readonly isLoading = signal(false);
+readonly totalItems = signal(0);
+readonly hasMore = computed(() =&gt; this.books().length &lt; this.totalItems());
+
+search(query: string): void {
+  this.isLoading.set(true);
+  this.books.set([]);
+  this.fetchPage(0);
+}
+
+// Template: just call the signal
+// {{ books().length }} results
+// @if (isLoading()) { &lt;spinner /&gt; }
+          </code></pre>
+            <p style="font-size: 0.6em; color: #8be9fd">
+              No subjects, no subscriptions, no async pipe. Signals are
+              synchronous, fine-grained, and composable via computed().
+            </p>
+          </section>
+          <section>
+            <h3>effect() for Side Effects</h3>
+            <pre><code class="language-typescript" data-trim>
+// v17-v19: Automatic localStorage sync via effect()
+@Injectable({ providedIn: 'root' })
+export class ProfileService {
+  readonly profile = signal&lt;UserProfile | null&gt;(this.loadFromStorage());
+
+  constructor() {
+    effect(() =&gt; {
+      const p = this.profile();
+      if (p) localStorage.setItem('profile', JSON.stringify(p));
+      else localStorage.removeItem('profile');
+    });
+  }
+}
+          </code></pre>
+          </section>
+          <section>
+            <h3>Signal Inputs, Outputs &amp; model()</h3>
+            <pre><code class="language-typescript" data-trim>
+// BEFORE: Decorator-based
+@Input() book!: Book;
+@Output() favorited = new EventEmitter&lt;Book&gt;();
+
+// AFTER: Function-based (v17 preview → v19 stable)
+book = input.required&lt;Book&gt;();
+favorited = output&lt;Book&gt;();
+
+// model() — two-way binding in one signal (v17.2+)
+value = model&lt;string&gt;('');  // replaces @Input + @Output pair
+// Parent: &lt;app-slider [(value)]="volume" /&gt;
+          </code></pre>
+            <p style="font-size: 0.55em; color: #8be9fd">
+              Everything becomes a signal — inputs, outputs, queries, two-way
+              bindings. No more decorators for component communication.
+            </p>
+            <aside class="notes">
+              Signal inputs are read-only — data flows one direction. output()
+              replaces EventEmitter. model() is the two-way binding primitive —
+              replaces the @Input() + @Output() + Change suffix pattern. Great
+              for UI components like sliders, toggles, custom form controls.
+              viewChild()/contentChild() also return signals. All went stable in
+              v19.
+            </aside>
+          </section>
+          <section>
+            <h3>@defer for Lazy Rendering</h3>
+            <pre><code class="language-html" data-trim>
+&lt;!-- v17-v19: Lazy load component when scrolled into view --&gt;
+@defer (on viewport; prefetch on idle) {
+  &lt;app-related-books [bookId]="id()" /&gt;
+} @placeholder (minimum 1s) {
+  &lt;div class="shimmer-placeholder"&gt;
+    Scroll down to load recommendations...
+  &lt;/div&gt;
+} @loading (minimum 1s) {
+  &lt;div class="loading-shimmer"&gt;&lt;/div&gt;
+}
+          </code></pre>
+          </section>
+          <section>
+            <h3>rxResource() — Async Data</h3>
+            <pre><code class="language-typescript" data-trim>
+// v19: rxResource wraps Observable with built-in state
+bookResource = rxResource&lt;Book | null, string&gt;({
+  request: this.id,  // signal passed directly!
+  loader: ({ request: id }) =&gt; this.svc.getBookById(id),
+});
+book = computed(() =&gt; this.bookResource.value() ?? null);
+          </code></pre>
+            <pre><code class="language-html" data-trim>
+&lt;!-- Built-in loading &amp; error — no manual signals! --&gt;
+@if (bookResource.isLoading()) {
+  &lt;app-skeleton /&gt;
+} @else if (bookResource.error()) {
+  &lt;p&gt;Something went wrong&lt;/p&gt;
+} @else if (book()) {
+  &lt;h1&gt;{{ book()!.title }}&lt;/h1&gt;
+}
+          </code></pre>
+            <p style="font-size: 0.55em; color: #8be9fd">
+              Introduced in v19. Replaces manual signal + effect + subscribe.
+            </p>
+            <aside class="notes">
+              rxResource wraps an Observable-based loader with built-in state
+              management. No more manual isLoading/error signals. The request
+              signal triggers refetch automatically when it changes. Note: in
+              v19 the API uses request+loader. In v20+ it was renamed to
+              params+stream when it stabilized. resource() is the Promise-based
+              equivalent. httpResource() (v20) goes one step further — no
+              service needed, just a URL.
+            </aside>
+          </section>
+          <section>
+            <h3>SSR & Hydration (v16–v19)</h3>
+            <pre><code class="language-typescript" data-trim>
+// Adding SSR to an existing app:
+ng add @angular/ssr
+
+// Hydration enabled by default (v17+)
+bootstrapApplication(App, {
+  providers: [provideClientHydration()]
+});
+
+// Incremental hydration (v19) — load parts on demand
+@defer (hydrate on viewport) {
+  &lt;app-comments /&gt;
+}
+          </code></pre>
+            <p style="font-size: 0.6em; color: #8be9fd">
+              SSR went from painful to production-ready. Non-destructive
+              hydration (v16), <code>@angular/ssr</code> package (v17),
+              incremental hydration (v19). One command to add.
+            </p>
+            <aside class="notes">
+              Angular SSR has improved massively. Used to be Angular Universal —
+              quite painful to set up. Now it's one CLI command (ng add
+              @angular/ssr), hydration is automatic, and incremental hydration
+              (v19) means you don't even load all JS upfront. Google reported
+              45% LCP improvement with hydration. Virgin Media O2 saw 112%
+              increase in sales after adopting Angular SSR.
+            </aside>
+          </section>
+          <section>
+            <h3>Live Demo — v17–v19</h3>
+            <iframe src="http://localhost:4203" class="demo-iframe"></iframe>
+            <p style="font-size: 0.5em; color: #8be9fd">
+              http://localhost:4203 — Angular 19
+            </p>
+          </section>
+        </section>
+
+        <!-- Slide 7: v20-v21 Section -->
+        <section
+          data-background-gradient="radial-gradient(circle, #1a2a40 0%, #0a1525 100%)"
+        >
+          <section
+            data-background-image="assets/island-v20-v21.png"
+            data-background-size="contain"
+            data-background-color="#1a1a2e"
+          ></section>
+          <section>
+            <h3>httpResource() (new in v20)</h3>
+            <pre><code class="language-typescript" data-trim>
+// httpResource: direct URL — no service needed!
+bookResource = httpResource&lt;GoogleBookItem&gt;(
+  () =&gt; `/api/volumes/${this.id()}`
+);
+
+// rxResource stable in v20+: renamed from v19
+// v19: request + loader → v20+: params + stream
+bookResource = rxResource&lt;Book | null, string&gt;({
+  params: this.id,
+  stream: ({ params: id }) =&gt; this.svc.getBookById(id),
+});
+          </code></pre>
+            <p style="font-size: 0.55em; color: #8be9fd">
+              httpResource new in v20. rxResource stabilized:
+              <code>request→params</code>, <code>loader→stream</code>
+            </p>
+            <aside class="notes">
+              httpResource is like a reactive fetch() — pass a URL as a signal
+              expression, get back value, isLoading, error, headers as signals.
+              Uses HttpClient under the hood so interceptors still work. The API
+              rename from request/loader to params/stream happened when
+              rxResource stabilized — breaking change but they improved naming.
+            </aside>
+          </section>
+          <section>
+            <h3>Signal Forms (experimental)</h3>
+            <pre><code class="language-typescript" data-trim>
+// v20-v21: Signal Forms — no FormBuilder, no FormGroup!
+import { form, FormField, required, minLength, pattern }
+  from '@angular/forms/signals';
+
+profileForm = form(this.profileData, (s) =&gt; {
+  required(s.firstName);
+  minLength(s.firstName, 2);
+  required(s.email);
+  pattern(s.email, /^[^\s@]+@[^\s@]+\.[^\s@]+$/);
+});
+
+// Template: [formField]="profileForm.firstName"
+// Validation: profileForm.firstName().invalid()
+          </code></pre>
+          </section>
+          <section>
+            <h3>Zoneless Bootstrap</h3>
+            <pre><code class="language-typescript" data-trim>
+// v20-v21: No zone.js! No provideZoneChangeDetection()!
+export const appConfig: ApplicationConfig = {
+  providers: [
+    provideBrowserGlobalErrorListeners(), // replaces zone error handling
+    provideRouter(routes, withComponentInputBinding()),
+    provideHttpClient(),
+  ]
+};
+
+// Zone.js is completely removed from the bundle
+// Change detection driven purely by signals
+          </code></pre>
+            <aside class="notes">
+              Zone.js monkey-patches all async APIs (setTimeout, Promise, XHR)
+              to know when to run change detection. With signals, Angular knows
+              exactly what changed — no patching needed.
+              provideBrowserGlobalErrorListeners() handles uncaught errors that
+              zone.js used to catch. Hundreds of zoneless apps running in
+              production at Google. Over 1400 public Angular apps on HTTP
+              Archive are already zoneless.
+            </aside>
+          </section>
+          <section>
+            <h3>linkedSignal() (stable in v20)</h3>
+            <pre><code class="language-typescript" data-trim>
+// Mutable state that resets when a dependency changes
+const options = signal(['apple', 'banana', 'fig']);
+
+// Resets to first option whenever options change
+const choice = linkedSignal(() =&gt; options()[0]);
+
+choice.set('fig');       // user picks fig
+options.set(['kiwi']);   // options change → choice resets to 'kiwi'
+          </code></pre>
+            <p style="font-size: 0.6em; color: #8be9fd">
+              Common UI pattern: selection state that tracks a parent signal but
+              can be locally overridden.
+            </p>
+            <aside class="notes">
+              Solves a common UI problem: a dropdown selection that resets when
+              available options change, but can be manually overridden by the
+              user. Without linkedSignal, people used effects to reset state —
+              error-prone and harder to reason about. The advanced form gives
+              access to previous values too.
+            </aside>
+          </section>
+          <section>
+            <h3>Live Demo — v20–v21</h3>
+            <iframe src="http://localhost:4204" class="demo-iframe"></iframe>
+            <p style="font-size: 0.5em; color: #8be9fd">
+              http://localhost:4204 — Angular 21 (Zoneless!)
+            </p>
+          </section>
+        </section>
+
+        <!-- Slide 8: v22 Section -->
+        <section
+          data-background-gradient="radial-gradient(circle, #1a1040 0%, #0a0520 100%)"
+        >
+          <section
+            data-background-image="assets/island-v22.png"
+            data-background-size="contain"
+            data-background-color="#1a1a2e"
+          ></section>
+          <section>
+            <h3>@Service()</h3>
+            <pre><code class="language-typescript" data-trim>
+// Replaces @Injectable({ providedIn: 'root' })
+import { Service } from '@angular/core';
+
+@Service()
+export class BookSearchService {
+  private readonly http = inject(HttpClient);
+  // ... cleaner, less boilerplate
+}
+          </code></pre>
+            <p style="font-size: 0.6em; color: #8be9fd">
+              Singleton by default — no <code>providedIn</code> needed.
+            </p>
+            <aside class="notes">
+              Syntactic sugar but meaningful — reduces boilerplate and makes
+              intent clearer. @Injectable still exists for constructor injection
+              or non-root providers. @Service is the "90% use case" decorator.
+            </aside>
+          </section>
+          <section>
+            <h3>injectAsync()</h3>
+            <pre><code class="language-typescript" data-trim>
+// Lazy-load a service on demand — separate chunk!
+import { injectAsync, onIdle } from '@angular/core';
+
+export class Favorites {
+  private loadExport = injectAsync(
+    () =&gt; import('./export.service'),
+    { prefetch: onIdle }
+  );
+
+  async export() {
+    const svc = await this.loadExport();
+    svc.downloadFavorites(this.books());
+  }
+}
+          </code></pre>
+            <p style="font-size: 0.6em; color: #8be9fd">
+              Service code not loaded until called — true code splitting for DI.
+            </p>
+            <aside class="notes">
+              Big deal for large apps. Previously, components and routes could
+              be lazy-loaded but services were always eagerly loaded.
+              injectAsync splits the service into its own chunk. In the demo
+              app, the ExportService is 397 bytes in its own chunk — only loaded
+              when the user clicks "Export". prefetch:onIdle pre-downloads it
+              during browser idle time so when the user clicks, it's instant.
+            </aside>
+          </section>
+          <section>
+            <h3>Signal Forms Stable &amp; Selectorless</h3>
+            <pre><code class="language-typescript" data-trim>
+profileForm = form(this.profileData, (s) => {
+  required(s.firstName);
+  minLength(s.firstName, 2);
+  required(s.email);
+  pattern(s.email, /^[^\s@]+@[^\s@]+\.[^\s@]+$/);
+});
+          </code></pre>
+            <pre><code class="language-typescript" data-trim>
+// Selectorless — no selector property needed!
+@Component({
+  imports: [BookCard, RouterLink],
+  template: `...`
+})
+export class Favorites {  // No "Component" suffix!
+  protected readonly favoritesService = inject(FavoritesService);
+}
+          </code></pre>
+          </section>
+          <section>
+            <h3>Arrow Functions &amp; Spread in Templates</h3>
+            <pre><code class="language-html" data-trim>
+&lt;!-- Arrow functions in templates (v22) --&gt;
+@for (book of books().filter((b) =&gt; b.rating &gt; 4); track book.id) {
+  &lt;app-book-card [book]="book" /&gt;
+}
+
+&lt;!-- Spread syntax in templates --&gt;
+&lt;app-book-card [book]="{...book, highlighted: true}" /&gt;
+          </code></pre>
+            <pre><code class="language-html" data-trim>
+&lt;!-- @boundary / @error (developer preview) --&gt;
+@boundary {
+  &lt;app-book-detail [id]="selectedId()" /&gt;
+} @error (e) {
+  &lt;p&gt;Something went wrong: {{ e.message }}&lt;/p&gt;
+}
+          </code></pre>
+          </section>
+          <section>
+            <h3>Live Demo — v22</h3>
+            <iframe src="http://localhost:4205" class="demo-iframe"></iframe>
+            <p style="font-size: 0.5em; color: #8be9fd">
+              http://localhost:4205 — Angular 22 (@Service, OnPush default)
+            </p>
+          </section>
+        </section>
+
+        <!-- Slide 9: Comparison Table -->
+        <section>
+          <section>
+            <h2>Comparison Table</h2>
+            <div class="comparison-table-wrapper">
+              <table class="comparison-table">
+                <thead>
+                  <tr>
+                    <th>Feature</th>
+                    <th>v4–v9</th>
+                    <th>v10–v13</th>
+                    <th>v14–v16</th>
+                    <th>v17–v19</th>
+                    <th>v20–v21</th>
+                    <th>v22</th>
+                  </tr>
+                </thead>
+                <aside class="notes">
+                  Summarizes everything covered. The left half (v4-v13) is
+                  "classic Angular", the right half (v17+) is "modern Angular",
+                  and v14-v16 is the transition point. Almost every row changes
+                  between v13 and v17. The build tooling shift from Webpack to
+                  Vite brought massive DX improvements — instant HMR, 87% faster
+                  builds.
+                </aside>
+                <tbody>
+                  <tr>
+                    <td>Organization</td>
+                    <td>NgModules</td>
+                    <td>NgModules</td>
+                    <td>Standalone</td>
+                    <td>Standalone</td>
+                    <td>Selectorless</td>
+                    <td>Selectorless</td>
+                  </tr>
+                  <tr>
+                    <td>DI</td>
+                    <td>Constructor</td>
+                    <td>Constructor</td>
+                    <td>inject()</td>
+                    <td>inject()</td>
+                    <td>inject()</td>
+                    <td>@Service()</td>
+                  </tr>
+                  <tr>
+                    <td>Guards</td>
+                    <td>Class</td>
+                    <td>Class</td>
+                    <td>Function</td>
+                    <td>Function</td>
+                    <td>Function</td>
+                    <td>Function</td>
+                  </tr>
+                  <tr>
+                    <td>Templates</td>
+                    <td>*ngIf / *ngFor</td>
+                    <td>*ngIf / *ngFor</td>
+                    <td>*ngIf / *ngFor</td>
+                    <td>@if / @for</td>
+                    <td>@if / @for</td>
+                    <td>@if / @for + arrows</td>
+                  </tr>
+                  <tr>
+                    <td>State</td>
+                    <td>BehaviorSubject</td>
+                    <td>BehaviorSubject</td>
+                    <td>BehaviorSubject</td>
+                    <td>Signals</td>
+                    <td>Signals + linkedSignal</td>
+                    <td>Signals + linkedSignal</td>
+                  </tr>
+                  <tr>
+                    <td>Forms</td>
+                    <td>Untyped</td>
+                    <td>Typed</td>
+                    <td>Typed</td>
+                    <td>Typed + inject</td>
+                    <td>Signal Forms (exp.)</td>
+                    <td>Signal Forms (stable)</td>
+                  </tr>
+                  <tr>
+                    <td>HTTP</td>
+                    <td>subscribe()</td>
+                    <td>subscribe()</td>
+                    <td>subscribe()</td>
+                    <td>rxResource()</td>
+                    <td>httpResource()</td>
+                    <td>httpResource()</td>
+                  </tr>
+                  <tr>
+                    <td>Zone</td>
+                    <td>Zone.js</td>
+                    <td>Zone.js</td>
+                    <td>Zone.js</td>
+                    <td>Zone.js</td>
+                    <td>Zoneless</td>
+                    <td>Zoneless</td>
+                  </tr>
+                  <tr>
+                    <td>Build</td>
+                    <td>Webpack</td>
+                    <td>Webpack</td>
+                    <td>esbuild</td>
+                    <td>Vite</td>
+                    <td>Vite</td>
+                    <td>Vite</td>
+                  </tr>
+                  <tr>
+                    <td>Testing</td>
+                    <td>Karma</td>
+                    <td>Karma</td>
+                    <td>Karma</td>
+                    <td>Vitest</td>
+                    <td>Vitest</td>
+                    <td>Vitest</td>
+                  </tr>
+                  <tr>
+                    <td>Lazy Load</td>
+                    <td>Module</td>
+                    <td>Module</td>
+                    <td>Component</td>
+                    <td>Component + @defer</td>
+                    <td>Component + @defer</td>
+                    <td>@defer + injectAsync</td>
+                  </tr>
+                  <tr>
+                    <td>SSR</td>
+                    <td>Universal</td>
+                    <td>Universal</td>
+                    <td>Universal</td>
+                    <td>@angular/ssr + hydration</td>
+                    <td>Incremental hydration</td>
+                    <td>Incremental hydration</td>
+                  </tr>
+                  <tr>
+                    <td>Change Det.</td>
+                    <td>Default</td>
+                    <td>Default</td>
+                    <td>Default</td>
+                    <td>Default</td>
+                    <td>Zoneless</td>
+                    <td>OnPush default</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+          <section>
+            <h2>Bundle Sizes (Production)</h2>
+            <table class="port-table" style="font-size: 0.6em">
+              <thead>
+                <tr>
+                  <th>Version</th>
+                  <th>Initial</th>
+                  <th>Lazy Chunks</th>
+                  <th>Total</th>
+                  <th>Zone.js</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>v4–v9</td>
+                  <td>305 kB</td>
+                  <td>22 kB (4)</td>
+                  <td>327 kB</td>
+                  <td>✅</td>
+                </tr>
+                <tr>
+                  <td>v10–v13</td>
+                  <td>272 kB</td>
+                  <td>21 kB (5)</td>
+                  <td>293 kB</td>
+                  <td>✅</td>
+                </tr>
+                <tr>
+                  <td>v14–v16</td>
+                  <td>243 kB</td>
+                  <td>55 kB (6)</td>
+                  <td>298 kB</td>
+                  <td>✅</td>
+                </tr>
+                <tr>
+                  <td>v17–v19</td>
+                  <td>295 kB</td>
+                  <td>58 kB (9)</td>
+                  <td>353 kB</td>
+                  <td>✅</td>
+                </tr>
+                <tr>
+                  <td>v20–v21</td>
+                  <td>276 kB</td>
+                  <td>83 kB (8)</td>
+                  <td>359 kB</td>
+                  <td>❌</td>
+                </tr>
+                <tr style="background: rgba(100, 200, 100, 0.1)">
+                  <td><strong>v22</strong></td>
+                  <td><strong>290 kB</strong></td>
+                  <td><strong>96 kB (9)</strong></td>
+                  <td><strong>386 kB</strong></td>
+                  <td><strong>❌</strong></td>
+                </tr>
+              </tbody>
+            </table>
+            <p style="font-size: 0.5em; color: #8be9fd; margin-top: 0.5em">
+              v20+: No zone.js! More code in lazy chunks = smaller initial
+              load.<br />
+              v17+ has more chunks due to @defer (related-books loaded on
+              viewport).
+            </p>
+          </section>
+        </section>
+
+        <!-- Slide 11: Thank You / Q&A -->
+        <section
+          data-background-image="assets/thank-you.png"
+          data-background-size="cover"
+        >
+          <aside class="notes">
+            "Our journey ends here for today — the future looks bright.
+            Questions?" GitHub repo: bnymncoskuner/angular-odyssey All 6 apps
+            run locally with start-all.sh Angular releases every 6 months,
+            upgrades are manageable via ng update
+          </aside>
+        </section>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/highlight/highlight.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/notes/notes.js"></script>
+    <script>
+      Reveal.initialize({
+        hash: true,
+        plugins: [RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
+</html>
